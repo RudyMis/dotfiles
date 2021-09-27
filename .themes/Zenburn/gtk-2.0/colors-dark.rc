@@ -1,0 +1,45 @@
+#
+# Colour scheme
+#
+gtk-color-scheme = "base_color:#484848\nbg_color:#3f3f3f"
+gtk-color-scheme = "text_color:#efefef\nfg_color:#dcdccc"
+gtk-color-scheme = "selected_bg_color:#dcdccc\nselected_fg_color:#3f3f3f"
+gtk-color-scheme = "tooltip_bg_color:#333333\ntooltip_fg_color:#efefef"
+gtk-color-scheme = "link_color:#e89393\nvisited_link_color:#cc9393"
+gtk-color-scheme = "inverted_dark_color:#333333\ninverted_fg_color:#efefef"
+gtk-color-scheme = "scroll_slider_color:#dcdccc\nscroll_slider_prelight_color:#8f8f8f"
+gtk-color-scheme = "panel_bg_color:#262626"
+gtk-color-scheme = "secondary_dark_color:#222222"
+gtk-color-scheme = "solid_white:#FFFFFF"
+gtk-color-scheme = "accent_color:#f0dfaf"
+gtk-color-scheme = "light_color:#484848"
+
+
+#
+# Default Colours
+#
+style "default_colors" {
+  text[NORMAL] = mix(0.87, @text_color, @bg_color)
+  text[PRELIGHT] = @text_color
+  text[ACTIVE] = @selected_fg_color
+  text[INSENSITIVE] = mix(0.28, @text_color, @base_color)
+  text[SELECTED] = @selected_fg_color
+
+  base[NORMAL] = @base_color
+  base[PRELIGHT] = mix(0.5, @base_color, @bg_color)
+  base[ACTIVE] = @selected_bg_color
+  base[INSENSITIVE] = mix(0.5, @base_color, @bg_color)
+  base[SELECTED] = @selected_bg_color
+
+  fg[NORMAL] = mix(0.87, @fg_color, @bg_color)
+  fg[PRELIGHT] = @fg_color
+  fg[ACTIVE] = @fg_color
+  fg[INSENSITIVE] = mix(0.28, @fg_color, @bg_color)
+  fg[SELECTED] = @selected_fg_color
+
+  bg[NORMAL] = @bg_color
+  bg[PRELIGHT] = mix(0.1, @fg_color, @bg_color)
+  bg[ACTIVE] = mix(0.2, @fg_color, @bg_color)
+  bg[INSENSITIVE] = @bg_color
+  bg[SELECTED] = @selected_bg_color
+}

@@ -1,0 +1,10 @@
+#ignores all tbh
+
+/*
+
+!.gitignore
+!.i3/config
+!.code-oss
+!.Xresources
+!.themes
+!.vim
