@@ -1,0 +1,79 @@
+// scss-lint:disable ColorVariable
+
+@import "functions";
+
+// default color scheme
+$bg_color: if($variant == "dark", #444444, #3F3F3F);
+$fg_color: if($variant == "dark", #dddddd, #DCDCCC);
+$base_color: if($variant == "dark", #DCDCCC, #2B2B2B);
+$text_color: if($variant == "dark", #3F3F3F, #DCDCCC);
+$selected_bg_color: #9C6363;
+$selected_fg_color: #ffffff;
+$tooltip_bg_color: #444444;
+$tooltip_fg_color: #DCDCCC;
+
+// dark colors
+$dark_bg_color: #3F3F3F;
+$dark_fg_color: #DCDCCC;
+
+// shadows
+$dark_shadow: #000000;
+$light_shadow: #ffffff;
+
+// white and black
+$black: #000000;
+$white: #ffffff;
+
+// misc colors used by gtk+
+$info_fg_color: #ffffff;
+$info_bg_color: #93E0E3;
+$warning_fg_color: #ffffff;
+$warning_bg_color: #F0DFAF;
+$question_fg_color: #ffffff;
+$question_bg_color: #9475CC;
+$error_fg_color: #ffffff;
+$error_bg_color: #DCA3A3;
+$link_color: #94BFF3;
+$success_color: #4caf50;
+$warning_color: #F0DFAF;
+$error_color: #DCA3A3;
+
+$toolbar_bg_color: $bg_color;
+$toolbar_fg_color: $fg_color;
+
+$titlebar_bg_color: $dark_bg_color;
+$titlebar_fg_color: $dark_fg_color;
+
+$menu_bg_color: $dark_bg_color;
+$menu_fg_color: $dark_fg_color;
+
+$menubar_bg_color: $dark_bg_color;
+$menubar_fg_color: $dark_fg_color;
+
+$panel_bg_color: $dark_bg_color;
+$panel_fg_color: $dark_fg_color;
+
+$osd_base: $dark_bg_color;
+$osd_fg: $dark_fg_color;
+$osd_bg: alpha($osd_base, 0.8);
+
+$lightdm_bg_color: $dark_bg_color;
+$lightdm_fg_color: $dark_fg_color;
+
+$wm_bg: $titlebar_bg_color;
+$wm_border_focused: transparent;
+$wm_border_unfocused: transparent;
+$wm_title_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
+$wm_title_unfocused: mix($titlebar_fg_color, $titlebar_bg_color, .4);
+$wm_icons_focused: mix($titlebar_fg_color, $titlebar_bg_color, .1);
+$wm_icons_focused_prelight: $selected_bg_color;
+$wm_icons_focused_pressed: shade($selected_bg_color, .8);
+$wm_icons_unfocused: mix($titlebar_fg_color, $titlebar_bg_color, .4);
+$wm_icons_unfocused_prelight: $selected_bg_color;
+$wm_icons_unfocused_pressed: shade($selected_bg_color, .8);
+
+// widget styles
+$roundness: 2px;
+$spacing: 5px;
+$gradient: 0;
+$contrast: .8;
