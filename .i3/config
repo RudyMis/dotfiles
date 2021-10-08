@@ -227,6 +227,20 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+# Quick launch menu
+bindsym $mod+g mode "$mode_quick_launch"
+set $mode_quick_launch (c)ode, (f)irefox, (g)odot, (a)seprite
+mode "$mode_quick_launch" {
+    bindsym c exec code, mode "default"
+    bindsym f exec firefox, mode "default"
+    bindsym g exec godot, mode "default"
+    bindsym a exec aseprite, mode "default"
+
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
 # Set shut down, restart and locking features
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
@@ -282,7 +296,7 @@ exec --no-startup-id clipit
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
