@@ -1,0 +1,35 @@
+{
+    "workbench.colorTheme": "Zenburn",
+    "telemetry.telemetryLevel": "off",
+    "git.autofetch": true,
+    "C_Cpp.default.cppStandard": "c++17",
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "jupyter.askForKernelRestart": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.sideBar.location": "right",
+    "rust-analyzer.inlayHints.typeHints": false,
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.tabs.enabled": false,
+    "workbench.startupEditor": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "bracket-pair-colorizer-2.colors": [
+        "#8FAF9F",
+        "#FFCFAF",
+        "#C0BED1"
+    ],
+    "bracket-pair-colorizer-2.unmatchedScopeColor": "#BC6C4C",
+    "workbench.colorCustomizations": {
+        "editorError.foreground": "#bc6c4c",
+        "editorWarning.foreground": "#ffcfaf",
+        "editorInfo.foreground": "#7f9f7f"
+    }
+}
