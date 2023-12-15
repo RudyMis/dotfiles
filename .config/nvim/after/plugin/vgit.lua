@@ -1,1 +1,7 @@
--- require('vgit').setup() 
+require('vgit').setup({
+  settings = {
+    live_blame = {
+      enabled = false,
+    }
+  }
+}) 

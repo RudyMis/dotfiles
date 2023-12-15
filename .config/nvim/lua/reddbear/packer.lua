@@ -11,10 +11,8 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use {
-	  "phha/zenburn.nvim",
-	  config = function() require("zenburn").setup() end
-  }
+  use('theprimeagen/harpoon')
+  use('mbbill/undotree')
 
   use {
 	  'tanvirtin/vgit.nvim',
@@ -24,12 +22,14 @@ return require('packer').startup(function(use)
   }
 
   use {
+    'numToStr/Comment.nvim',
+    config = function() require('Comment').setup() end
+  }
+
+  use {
 	  'nvim-treesitter/nvim-treesitter', tag = 'v0.8.3',
 	  run = ':TSUpdate'
   }
-
-  use('theprimeagen/harpoon')
-  use('mbbill/undotree')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -46,6 +46,17 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
+  use {
+	  "phha/zenburn.nvim",
+	  config = function() require("zenburn").setup() end
+  }
+
 
   use('eandrju/cellular-automaton.nvim')
 
